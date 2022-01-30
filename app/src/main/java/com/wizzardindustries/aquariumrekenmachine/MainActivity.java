@@ -113,7 +113,7 @@ public class MainActivity extends AppCompatActivity {
 
 
     private void checkForUpdate() {
-        Toast.makeText(this, "Checking for updates...", Toast.LENGTH_SHORT).show();
+        Toast.makeText(this, "Checking for updates!", Toast.LENGTH_SHORT).show();
         AppUpdater appUpdate = new AppUpdater(this);
         appUpdate.setDisplay(Display.DIALOG)
                 .setUpdateFrom(UpdateFrom.GITHUB)
