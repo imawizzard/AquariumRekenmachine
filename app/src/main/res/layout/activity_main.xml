@@ -149,7 +149,7 @@
         android:layout_height="50dp"
         android:fontFamily="@font/cronus"
         android:gravity="center"
-        android:text="Kh"
+        android:text="Kh2"
         android:textColor="#FFE503"
         android:textSize="35dp"
         android:textStyle="bold"
