@@ -119,7 +119,11 @@ public class MainActivity extends AppCompatActivity {
                 .setUpdateFrom(UpdateFrom.GITHUB)
                 .setGitHubUserAndRepo("imawizzard", "AquariumRekenmachine")
                 .setTitleOnUpdateAvailable("Nieuwe Update beschikbaar!")
+                .setContentOnUpdateAvailable("Installeer nu!")
+                .setTitleOnUpdateNotAvailable("Geen update beschikbaar")
+                .setContentOnUpdateNotAvailable("Probeer later opnieuw")
                 .setCancelable(false)
+                .showEvery(5)
                 .start();
     }
 }
