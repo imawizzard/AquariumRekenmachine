@@ -116,7 +116,7 @@ public class MainActivity extends AppCompatActivity {
         appUpdate.setDisplay(Display.DIALOG)
                 .setUpdateFrom(UpdateFrom.GITHUB)
                 .setGitHubUserAndRepo("imawizzard", "AquariumRekenmachine")
-                .setTitleOnUpdateAvailable("Nieuwe update beschikbaar!")
+                .setTitleOnUpdateAvailable("Update beschikbaar!")
                 .setCancelable(false)
                 .start();
     }
