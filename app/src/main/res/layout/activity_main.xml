@@ -1,0 +1,231 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    style="bold"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#4A939C"
+    tools:context=".MainActivity">
+
+
+    <EditText
+        android:id="@+id/InputVolume"
+        android:layout_width="150dp"
+        android:layout_height="50dp"
+        android:layout_marginTop="50dp"
+        android:background="@drawable/edittextbackground"
+        android:digits="0123456789.,"
+        android:ems="10"
+        android:gravity="center"
+        android:inputType="numberDecimal"
+        android:textColor="#FFE503"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.498"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/InputKH" />
+
+    <TextView
+        android:id="@+id/OutputAquadur"
+        android:layout_width="100dp"
+        android:layout_height="50dp"
+        android:layout_marginTop="50dp"
+        android:background="@drawable/edittextbackground"
+        android:ems="10"
+        android:gravity="center"
+        android:inputType="none"
+        android:textColor="#FF0000"
+        android:textSize="30sp"
+        app:layout_constraintEnd_toStartOf="@+id/OutputGH"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/InputVolume" />
+
+    <TextView
+        android:id="@+id/OutputGH"
+        android:layout_width="100dp"
+        android:layout_height="50dp"
+        android:layout_marginTop="50dp"
+        android:background="@drawable/edittextbackground"
+        android:ems="10"
+        android:gravity="center"
+        android:inputType="none"
+        android:textColor="#FFE503"
+        android:textSize="18sp"
+        app:layout_constraintEnd_toStartOf="@id/Outputuscm"
+        app:layout_constraintStart_toEndOf="@+id/OutputAquadur"
+        app:layout_constraintTop_toBottomOf="@+id/InputVolume" />
+
+    <TextView
+        android:id="@+id/Outputuscm"
+        android:layout_width="100dp"
+        android:layout_height="50dp"
+        android:layout_marginTop="48dp"
+        android:background="@drawable/edittextbackground"
+        android:ems="10"
+        android:gravity="center"
+        android:inputType="none"
+        android:textColor="#FFE503"
+        android:textSize="18sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/OutputGH"
+        app:layout_constraintTop_toBottomOf="@+id/InputVolume" />
+
+    <EditText
+        android:id="@+id/InputKH"
+        android:layout_width="150dp"
+        android:layout_height="50dp"
+        android:layout_marginTop="100dp"
+        android:background="@drawable/edittextbackground"
+        android:digits="0123456789.,"
+        android:ems="10"
+        android:gravity="center"
+        android:inputType="numberDecimal"
+        android:textColor="#FFE503"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/textView2"
+        android:layout_width="100dp"
+        android:layout_height="50dp"
+        android:fontFamily="@font/cronus"
+        android:gravity="center"
+        android:text="Aquadur"
+        android:textColor="#FFE503"
+        android:textSize="35dp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="@+id/OutputAquadur"
+        app:layout_constraintStart_toStartOf="@+id/OutputAquadur"
+        app:layout_constraintTop_toBottomOf="@+id/OutputAquadur" />
+
+
+    <TextView
+        android:id="@+id/textView5"
+        android:layout_width="100dp"
+        android:layout_height="50dp"
+        android:fontFamily="@font/cronus"
+        android:gravity="center"
+        android:text="GH"
+        android:textColor="#FFE503"
+        android:textSize="35dp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="@+id/OutputGH"
+        app:layout_constraintStart_toStartOf="@+id/OutputGH"
+        app:layout_constraintTop_toBottomOf="@+id/OutputGH" />
+
+    <TextView
+        android:id="@+id/textuscm"
+        android:layout_width="100dp"
+        android:layout_height="50dp"
+        android:fontFamily="@font/cronus"
+        android:gravity="center"
+        android:text="µ s/cm"
+        android:textColor="#FFE503"
+        android:textSize="35dp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="@+id/Outputuscm"
+        app:layout_constraintStart_toStartOf="@+id/Outputuscm"
+        app:layout_constraintTop_toBottomOf="@+id/Outputuscm" />
+
+    <TextView
+        android:id="@+id/textView4"
+        style="bold"
+        android:layout_width="100dp"
+        android:layout_height="50dp"
+        android:fontFamily="@font/cronus"
+        android:gravity="center"
+        android:text="Volume"
+        android:textColor="#FFE503"
+        android:textSize="35dp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toStartOf="@+id/InputVolume"
+        app:layout_constraintTop_toTopOf="@+id/InputVolume" />
+
+    <TextView
+        android:id="@+id/textView3"
+        style="bold"
+        android:layout_width="100dp"
+        android:layout_height="50dp"
+        android:fontFamily="@font/cronus"
+        android:gravity="center"
+        android:text="Kh"
+        android:textColor="#FFE503"
+        android:textSize="35dp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toStartOf="@+id/InputKH"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@id/InputKH" />
+
+    <TextView
+        android:id="@+id/textView7"
+        style="bold"
+        android:layout_width="100dp"
+        android:layout_height="50dp"
+        android:fontFamily="@font/cronus"
+        android:gravity="left"
+        android:text=" °"
+        android:textColor="#FFE503"
+        android:textSize="35dp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toEndOf="@+id/InputKH"
+        app:layout_constraintTop_toTopOf="@id/InputKH" />
+
+    <TextView
+        android:id="@+id/textView8"
+        style="bold"
+        android:layout_width="100dp"
+        android:layout_height="50dp"
+        android:fontFamily="@font/cronus"
+        android:gravity="left|center_vertical"
+        android:text=" Liter"
+        android:textColor="#FFE503"
+        android:textSize="35dp"
+        android:textStyle="bold"
+        app:layout_constraintStart_toEndOf="@+id/InputVolume"
+        app:layout_constraintTop_toTopOf="@+id/InputVolume" />
+
+    <ImageView
+        android:id="@+id/imageView"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_marginStart="100dp"
+        android:layout_marginLeft="100dp"
+        android:layout_marginTop="100dp"
+        android:layout_marginEnd="100dp"
+        android:layout_marginRight="100dp"
+        android:layout_marginBottom="100dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/OutputAquadur"
+        app:srcCompat="@drawable/icoon" />
+
+    <ImageButton
+        android:id="@+id/btn_Close"
+        android:layout_width="60dp"
+        android:layout_height="50dp"
+        android:layout_marginTop="10dp"
+        android:background="@null"
+        android:scaleType="centerInside"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/left" />
+
+    <ImageButton
+        android:id="@+id/btn_Reset"
+        android:layout_width="60dp"
+        android:layout_height="50dp"
+        android:layout_marginStart="30dp"
+        android:layout_marginLeft="30dp"
+        android:layout_marginTop="10dp"
+        android:background="@null"
+        android:scaleType="centerInside"
+        app:layout_constraintStart_toEndOf="@id/btn_Close"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/undo_arrow" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
