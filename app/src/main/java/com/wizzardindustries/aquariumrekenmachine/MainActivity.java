@@ -10,6 +10,7 @@ import android.view.View;
 import android.widget.EditText;
 import android.widget.ImageButton;
 import android.widget.TextView;
+import android.widget.Toast;
 
 import com.github.javiersantos.appupdater.AppUpdater;
 import com.github.javiersantos.appupdater.enums.Display;
@@ -112,6 +113,7 @@ public class MainActivity extends AppCompatActivity {
 
 
     private void checkForUpdate() {
+        Toast.makeText(this, "Checking for updates...", Toast.LENGTH_SHORT).show();
         AppUpdater appUpdate = new AppUpdater(this);
         appUpdate.setDisplay(Display.DIALOG)
                 .setUpdateFrom(UpdateFrom.GITHUB)
